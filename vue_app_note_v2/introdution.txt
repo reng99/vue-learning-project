@@ -1,0 +1,12 @@
+﻿手动搭建一个项目
+
+必须
+webpack.config.js
+
+和
+backage.json//这里是安装的相关的依赖
+
+
+使用 webpack   vue vuex backage.json 搭建
+
+单独运行index.html有排版错误
