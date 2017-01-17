@@ -1,0 +1,30 @@
+11\1\2017
+    进行路由的搭建
+    stylus的熟悉
+    进行一些服务dev 的数据的写入
+    指定相关的路由的类名，在路由中进行输出，参考的网址：http://router.vuejs.org/zh-cn/api/options.html
+
+
+
+12\1\2017
+    进行vue-resource的使用
+    异步获取数据
+
+13\1\2017
+    sticky footer的布局-->使得页脚永远是停留在页面的底部，而不是屏幕的底部
+      相关的参照的网址如右边的链接 ：http://www.w3cplus.com/blog/tags/136.html
+    flex布局
+      进行flex布局, 在移动端比较好用
+    better-scroll 的使用
+      可查看github上面的网址:https://github.com/ustbhuangyi/better-scroll
+      vue中异步更新需要回调方法 $nextTick
+      需要调用一下vue的接口this.$nextTick(()=>{
+        这样在异步的时候才能够取得高度
+        添加需要调用的函数
+      })
+
+16\1\2017
+  better-scroll的学习
+    需要注意的是,它的点击事件是没有效果的，是监听touchstart touchend，是阻止了默认的了
+    可以将click设置为true，默认开发了事件，带来个问题--》网页的话会执行两次，解决的方法是将事件传递过来
+    注意：这里传递过来的event许哟啊加上$
