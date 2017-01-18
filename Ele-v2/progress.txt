@@ -1,0 +1,43 @@
+11\1\2017
+    进行路由的搭建
+    stylus的熟悉
+    进行一些服务dev 的数据的写入
+    指定相关的路由的类名，在路由中进行输出，参考的网址：http://router.vuejs.org/zh-cn/api/options.html
+
+
+
+12\1\2017
+    进行vue-resource的使用
+    异步获取数据
+
+13\1\2017
+    sticky footer的布局-->使得页脚永远是停留在页面的底部，而不是屏幕的底部
+      相关的参照的网址如右边的链接 ：http://www.w3cplus.com/blog/tags/136.html
+    flex布局
+      进行flex布局, 在移动端比较好用
+    better-scroll 的使用
+      可查看github上面的网址:https://github.com/ustbhuangyi/better-scroll
+      vue中异步更新需要回调方法 $nextTick
+      需要调用一下vue的接口this.$nextTick(()=>{
+        这样在异步的时候才能够取得高度
+        添加需要调用的函数
+      })
+
+16\1\2017
+  better-scroll的学习
+    需要注意的是,它的点击事件是没有效果的，是监听touchstart touchend，是阻止了默认的了
+    可以将click设置为true，默认开发了事件，带来个问题--》网页的话会执行两次，解决的方法是将事件传递过来
+    注意：这里传递过来的event许哟啊加上$
+
+
+17\1\2017
+  进行父组件调用子组件的方法的注意的事项，基于vue的2.0
+  1、在子组件中有相应的方法，这里设置一个方法show()
+  2、在父组件中引入相关的子组件，这里设置为food
+  3、在相关的组件中设置相应的解析ref，这里是这样设置的<food ref='food'></food>
+  4、在父组件的方法中引用子组件的方法show，代码如右所示：this.$refs.food.show();
+  5、成功
+
+  需要注意的transition
+  transition是需要放在添加的动态效果的元素的外层，但是，在渲染的时候，相应的样式元素是渲染成了
+  内层元素的类名,参考的相关的网址:http://cn.vuejs.org/v2/api/#transition
